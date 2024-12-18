@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Todo, TodoStatus } from '../types/todo';
 
-const API_URL = 'http://oversight.pokkada.com/api/todos';
+const API_URL = 'https://oversight.pokkada.com/api/todos';
 
 const normalizeStatus = (status: any): TodoStatus => {
   if (status === 'not_started' || status === 'in_progress' || status === 'completed') {
